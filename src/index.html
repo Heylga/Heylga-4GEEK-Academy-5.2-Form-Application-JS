@@ -4,83 +4,95 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+
     <title>JavaScript Validation</title>
   </head>
 
   <body>
-    <div class="container: style: text-align:center">
-      <h1 class="box1">Validation form</h1>
-      <form
-        id="contact-form"
-        name="regForm"
-        method=""
-        onsubmit="return validateForm()"
-      >
-        <div class="form-group">
-          <label> First Name</label>
-          <br /><input
-            type="text"
-            class="form-control"
-            placeholder="Your First name.."
-            name="fname"
-          /><span id="errorFirstName"></span>
-        </div>
-        <div class="form-group">
-          <br /><label> Last Name</label> <br />
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Your Last name.."
-            name="lname"/>
-            <span id="errorLastName"></span>
-        </div>
-        <div class="form-group">
-          <br /><label> Email</label> <br /><input
-            type="email"
-            class="form-control"
-            placeholder="Enter your email"
-            name="email"
-          /><span id="errorEmail"></span>
-        </div>
-        <div class="form-group">
-          <br /><label for="phone">Phone number:</label>
-          <input
-            type="tel"
-            id="phone"
-            class="form-control"
-            placeholder="Enter your phone number"
-            name="phone"
-          /><br /><span id="errorPhone"></span>
-        </div>
-        <div class="form-group">
-          <select id="origin" name="origin" type="text" required>
-            <option value="">Select Nationality</option>
-            <option value="Russian">Russian</option>
-            <option value="Spanish">Spanish</option>
-            <option value="Tanzanian">Tanzanian</option
-            ><span id="errorOrigin"></span>
-          </select>
-        </div>
-        <div class="form-group">
-          <br /><label>Age</label> <br /><input
-            type="number"
-            class="form-control"
-            placeholder="Enter your Age"
-            name="age"
-          /><span id="errorAge"></span>
-        </div>
-        <br />
-        <div class="form-group">
-          <label>Gender:</label>
-          <input type="radio" name="gender" value="Male" />Male
-          <input type="radio" name="gender" value="Female" />Female<br /><span
-            id="errorGender"
-          ></span>
-        </div>
-        <br /><button class="submit" type="submit">Submit</button>
-      </form>
+    <div class="container" id="container">
+    <h1 class="box1" ; style="text-align: center; font-family:fantasy; font-family: cursive;">Application Form</h1>
+    <form
+      id="contact-form"
+      name="regForm"
+      method=""
+      onsubmit="return validateForm()"
+      ;
+      style="text-align: center; padding: 1px;font-family:fantasy; font-family: cursive;"
+    >
+      <div class="form-group">
+        <label> First Name</label>
+        <br /><input
+          type="text"
+          class="form-control"
+          placeholder="Your First name.."
+          name="fname"
+          ;
+          style="text-align: center; padding: 1px;font-family:fantasy; font-family: cursive;"
+        /><span id="errorFirstName"></span>
+      </div>
+      <div class="form-group">
+        <br /><label> Last Name</label> <br />
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Your Last name.."
+          name="lname"
+          ;
+          style="text-align: center; padding: 1px;font-family:fantasy; font-family: cursive;"
+        />
+        <span id="errorLastName"></span>
+      </div>
+      <div class="form-group">
+        <br /><label> Email</label> <br /><input
+          type="email"
+          class="form-control"
+          placeholder="Enter your email"
+          name="email"
+          ;
+          style="text-align: center; padding: 1px;font-family:fantasy; font-family: cursive;"
+        /><span id="errorEmail"></span>
+      </div>
+      <div class="form-group">
+        <br /><label for="phone">Phone number:</label>
+        <input
+          type="tel"
+          id="phone"
+          class="form-control"
+          placeholder="Enter your phone number"
+          name="phone"
+          ;
+          style="text-align: center; padding: 1px;font-family:fantasy; font-family: cursive;"
+        /><br /><span id="errorPhone"></span>
+      </div>
+      <div class="form-group" ; style="text-align: center; padding-top: 15px;font-family:fantasy; font-family: cursive;">
+        <select id="origin" name="origin" type="text" required>
+          <option value="">Select Nationality</option>
+          <option value="Russian">Russian</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Tanzanian">Tanzanian</option
+          ><span id="errorOrigin"></span>
+        </select>
+      </div>
+      <div class="form-group" ; style="text-align: center; padding: 1px;font-family:fantasy; font-family: cursive;">
+        <br /><label>Age</label> <br /><input
+          type="number"
+          class="form-control"
+          placeholder="Enter your Age"
+          name="age"
+        /><span id="errorAge"></span>
+      </div>
+      <br />
+      <div class="form-group" ; style="text-align: center; padding: 1px;font-family:fantasy; font-family: cursive;">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" />Male
+        <input type="radio" name="gender" value="Female" />Female<br /><span
+          id="errorGender"
+        ></span>
+      </div>
+      <br /><button class="submit" type="submit"; stylefont-family:fantasy; font-family: cursive;>Submit</button>
+    </form>
 
-    <script src="app.js"></script>
+    <script src="app.js"></script>   
+    <link rel="stylesheet" href="main.css" />
   </body>
 </html>
