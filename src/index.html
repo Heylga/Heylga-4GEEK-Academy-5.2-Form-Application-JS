@@ -9,27 +9,77 @@
   </head>
 
   <body>
-    <div>
-      <h1 style="text-align: center;">Application Form</h1>
-    </div>
-
-    <form id="form" action="/" method="get">
-      <div class="input1" ; style="text-align: center;">
-        <label for="name">Name</label>
-        <input id="name" ; name="name" type="text" required />
-        <div id="error"></div>
-      </div>
-
-      <div class="input2" ; style="text-align: center;">
-        <label for="password">Password</label>
-        <input id="password" ; name="password" type="password" />
-        <div id="error"></div>
-      </div>
-
-      <button type="submit" ; style="display:inline-block; text-align: center;">
-        submit
-      </button>
-    </form>
+    <div class="container: style: text-align:center">
+      <h1 class="box1">Validation form</h1>
+      <form
+        id="contact-form"
+        name="regForm"
+        method=""
+        onsubmit="return validateForm()"
+      >
+        <div class="form-group">
+          <label> First Name</label>
+          <br /><input
+            type="text"
+            class="form-control"
+            placeholder="Your First name.."
+            name="fname"
+          /><span id="errorFirstName"></span>
+        </div>
+        <div class="form-group">
+          <br /><label> Last Name</label> <br />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Your Last name.."
+            name="lname"/>
+            <span id="errorLastName"></span>
+        </div>
+        <div class="form-group">
+          <br /><label> Email</label> <br /><input
+            type="email"
+            class="form-control"
+            placeholder="Enter your email"
+            name="email"
+          /><span id="errorEmail"></span>
+        </div>
+        <div class="form-group">
+          <br /><label for="phone">Phone number:</label>
+          <input
+            type="tel"
+            id="phone"
+            class="form-control"
+            placeholder="Enter your phone number"
+            name="phone"
+          /><br /><span id="errorPhone"></span>
+        </div>
+        <div class="form-group">
+          <select id="origin" name="origin" type="text" required>
+            <option value="">Select Nationality</option>
+            <option value="Russian">Russian</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Tanzanian">Tanzanian</option
+            ><span id="errorOrigin"></span>
+          </select>
+        </div>
+        <div class="form-group">
+          <br /><label>Age</label> <br /><input
+            type="number"
+            class="form-control"
+            placeholder="Enter your Age"
+            name="age"
+          /><span id="errorAge"></span>
+        </div>
+        <br />
+        <div class="form-group">
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="Male" />Male
+          <input type="radio" name="gender" value="Female" />Female<br /><span
+            id="errorGender"
+          ></span>
+        </div>
+        <br /><button class="submit" type="submit">Submit</button>
+      </form>
 
     <script src="app.js"></script>
   </body>
