@@ -9,13 +9,28 @@
   </head>
 
   <body>
-    <form action="/" method="get"></form>
     <div>
-      <label for="name">Name</label>
-      <input id="name" ; name="password" type="password" required />
+      <h1 style="text-align: center;">Application Form</h1>
     </div>
 
-    <button type="submit" ;></button>
+    <form id="form" action="/" method="get">
+      <div class="input1" ; style="text-align: center;">
+        <label for="name">Name</label>
+        <input id="name" ; name="name" type="text" required />
+        <div id="error"></div>
+      </div>
+
+      <div class="input2" ; style="text-align: center;">
+        <label for="password">Password</label>
+        <input id="password" ; name="password" type="password" />
+        <div id="error"></div>
+      </div>
+
+      <button type="submit" ; style="display:inline-block; text-align: center;">
+        submit
+      </button>
+    </form>
+
     <script src="app.js"></script>
   </body>
 </html>
